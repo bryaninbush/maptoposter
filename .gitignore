@@ -1,0 +1,49 @@
+
+# Local caches / generated artifacts (do not commit)
+/cache/
+/posters/
+/Saved/
+
+# Local data files (user-specific)
+/failed_places.json
+/my_custom_points.json
+/selected_points.json
+
+# Cached binary artifacts
+/cache/*.pkl
+/cache/*.json
+
+
+# Virtual environments
+env/
+.env/
+.venv/
+venv/
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+*.pyc
+__pycache__/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package manager
+uv.lock
+
+# Test outputs
+test_venv/
+htmlcov/
+.coverage
+.pytest_cache/
+.ruff_cache/
