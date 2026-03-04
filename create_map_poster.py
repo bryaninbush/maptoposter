@@ -32,6 +32,7 @@ from tqdm import tqdm
 
 from font_management import load_fonts
 from custom_markers_fixed import add_custom_markers_to_poster
+from gemini_layout import add_gemini_markers_to_poster
 
 class CacheError(Exception):
     """Raised when a cache operation fails."""
@@ -671,12 +672,20 @@ def create_poster(
             }
             
             # 呼叫標記函數（使用已定義的 font_sub）
-            add_custom_markers_to_poster(
+            # add_custom_markers_to_poster(
+            #     ax,
+            #     g_proj,
+            #     custom_points_path,
+            #     font_properties=font_sub,  # 使用剛才定義的字體
+            #     marker_config=marker_config
+            # )
+            # 改用 Gemini 版本：
+            add_gemini_markers_to_poster(
                 ax,
                 g_proj,
                 custom_points_path,
-                font_properties=font_sub,  # 使用剛才定義的字體
-                marker_config=marker_config
+                font_properties=font_sub,
+                config=marker_config
             )
         # ==================== 結束新增 ====================
 

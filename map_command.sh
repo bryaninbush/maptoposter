@@ -4,8 +4,8 @@
 python create_map_poster.py 
   -c "Custom" 
   -C "Taiwan" 
-  -lat 25.026989 
-  -long 121.510921 
+  -lat 24.133689 
+  -long 120.663928 
   -d 2000 
   -t terracotta
 
